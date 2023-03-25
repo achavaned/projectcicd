@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag svelezp9/mobile_store:latest
+      run: docker build . --file Dockerfile --tag antoinecdc/projectcicd:latest
       
     - name: Docker Push
-      run: docker push svelezp9/mobile_store
+      run: docker push antoinecdc/projectcicd
